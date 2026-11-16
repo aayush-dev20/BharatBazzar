@@ -1,0 +1,19 @@
+{
+  "short_name": "Haat",
+  "name": "Haat | भारत बाज़ार - Indian Online Marketplace",
+  "description": "India's online bazaar with Bhaav-taav, same-day delivery from local stores, and sponsor scratch cards.",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#fafaf8",
+  "theme_color": "#243b42",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "categories": ["shopping", "lifestyle", "business"]
+}

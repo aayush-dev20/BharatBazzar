@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-concrete: #edeeec;
+    --color-surface: #fafaf8;
+    --color-ink: #1e2528;
+    --color-slate-deep: #243b42;
+    --color-brass: #b08d57;
+    --color-brick: #8f3a2f;
+  }
+
+  body {
+    background-color: var(--color-concrete);
+    color: var(--color-ink);
+    font-family: 'Hind', 'Noto Sans Devanagari', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Jost', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}
+
+/* Custom scrollbar matching architectural look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+
+/* Clean border utilities */
+.border-subtle {
+  border-color: #e2e4e1;
+}
+.dark .border-subtle {
+  border-color: #2a3439;
+}
+
+/* Custom animation for scratch sparkle */
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.92; transform: scale(1.02); }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 3s ease-in-out infinite;
+}
